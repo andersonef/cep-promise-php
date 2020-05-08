@@ -38,7 +38,7 @@ class CepSanitizer implements CepSanitizerInterface
     public function leftPadWithZeros(): CepSanitizerInterface
     {
         try {
-            $this->cep = str_pad($this->cep, self::CEP_EXPECTED_LENGTH, '0');
+            $this->cep = str_pad($this->cep, self::CEP_EXPECTED_LENGTH, '0', STR_PAD_LEFT);
         } catch (\Exception $e) {
             throw new CepPromiseException('Couldn\'t pad cep "'.$this->cep.'" with zeros', 0, $e);
         }

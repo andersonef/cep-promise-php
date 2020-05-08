@@ -41,7 +41,15 @@ Ou modifique seu arquivo **composer.json** acrescentando a biblioteca nas depend
 A utilização é bem simples:
 
 ```php
-$endereco = (new CepPromise('83322170'))->fetch(); 
+$promise = (new CepPromise('83322170'))->fetch(); 
+
+// ASSÍNCRONO: Com a promise em mãos, eu posso tanto:
+$promise->then(function($endereco) {
+    // sua lógica aqui
+});
+
+// SÍNCRONO: 
+$endereco = $promise->wait();
 
 /** Endereço: 
  * {

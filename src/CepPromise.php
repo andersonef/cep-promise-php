@@ -54,7 +54,7 @@ class CepPromise
         return $this;
     }
 
-    public function fetch(): ResponseAddress
+    public function fetch(): Promise
     {
         if (count($this->cepServices) == 0) {
             throw new CepPromiseException('Empty service list.');
@@ -91,7 +91,6 @@ class CepPromise
                 return $response;
             }, function ($error) {
                 throw new CepPromiseException('Couldn\'t fetch from any service!'.$error->getMessage());
-            })
-            ->wait();
+            });
     }
 }
