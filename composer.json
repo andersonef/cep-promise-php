@@ -1,0 +1,23 @@
+{
+    "name": "andersonef/cep-promise-php",
+    "description": "Cópia do projeto filipedeschamps/cep-promise, porém em PHP. A idéia não é copiar fielmente a implementação, mas a funcionalidade afim de praticar apenas.",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anderson N Silva",
+            "email": "anderson.nuneseth@gmail.com"
+        }
+    ]
+}
