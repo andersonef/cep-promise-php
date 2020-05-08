@@ -9,7 +9,7 @@ Busca por CEP integrado diretamente aos serviços dos Correios, ViaCEP e WideNet
 
 Essa biblioteca é uma cópia da original feita pelo <a href="https://github.com/filipedeschamps" target="_blank">Filipe Deschamps (Michel Teló)</a> que achei a premissa bastante interessante e decidi copiá-la em PHP e Python.
 
-O estilo do código é outro, visto que o Filipe usa JS com uma aobrdagem mais funcional, e eu nesse projeto optei por utilizar orientação a objetos guiada por testes.
+O estilo do código é outro, visto que o Filipe usa JS com uma abordagem funcional, já eu nesse projeto optei por utilizar orientação a objetos guiada por testes.
 
 ## Features
 
