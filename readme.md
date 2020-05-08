@@ -100,3 +100,7 @@ Qualquer erro nessa biblioteca irá disparar uma exception do tipo **Andersonef\
 ## Deixe suas sugestões
 
 Fique a vontade para deixar sugestões nas issues!
+
+## Fonte
+
+Esse pacote foi inspirado no original <a href="https://github.com/filipedeschamps/cep-promise">https://github.com/filipedeschamps/cep-promise</a>
