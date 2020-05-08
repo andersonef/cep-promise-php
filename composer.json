@@ -13,6 +13,14 @@
             "src/"
         ]
     },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ],
+        "post-package-update": [
+            "composer run-script test"
+        ]
+    },
     "license": "MIT",
     "authors": [
         {
